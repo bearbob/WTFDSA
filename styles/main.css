@@ -9,9 +9,10 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 */
 
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: Georgia, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	height: 100%;
+    background-color: #B7CCB5;
 }
 
 .loading {
