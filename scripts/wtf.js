@@ -22,6 +22,7 @@ var WTF = (function() {
     var corpus;
     var regex;
     var dom;
+    var ref = ""; //the reference parameter for the character
 
     /*
       ------------------------------------------------------------
@@ -55,6 +56,7 @@ var WTF = (function() {
             sum += value.length;
         }); 
         $("#count").text(sum);
+        console.log(ref);
     }
 
     /*
@@ -91,6 +93,28 @@ var WTF = (function() {
 
         return data;
     }
+    
+     /*
+      ------------------------------------------------------------
+
+        Read URL parameter
+
+      ------------------------------------------------------------
+    */
+    
+    function getUrlParameter(sParam) {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++) 
+        {
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam) 
+            {
+                return sParameterName[1];
+            }
+        }
+        return "";
+    } 
 
     /*
       ------------------------------------------------------------
@@ -145,20 +169,35 @@ var WTF = (function() {
     */
 
     function generate() {
-
+        
+        var param = getUrlParameter('id');
+        var temp;
+        
         var type, text, part, iter = 0, // Safety mechanism
             idea = randomItem( templates ),
             item = regex.exec( idea ),
             copy = cloneCorpus();
-
+        
+        //if parameter was used, parse the idea template
+        if(param.length > 0){
+            temp = parseInt(param.substring(0,3), 16);
+            param = param.substring(3);
+            idea = templates[temp];
+        }
+        
         while ( item && ++iter < 1000 ) {
 
             type = item[ 0 ];
             text = item[ 1 ];
 
-            console.log( text, copy, copy[ text ] );
-
-            part = randomItem( copy[ text ], true );
+            //console.log( text, copy, copy[ text ] );
+            if(param.length > 0){
+                temp = parseInt(param.substring(0,3), 16);
+                param = param.substring(3);
+                part = copy[ text ][temp];
+            }else{
+                part = randomItem( copy[ text ], true );
+            }
             idea = idea.replace( type, part );
 
             regex.lastIndex = 0;
@@ -174,6 +213,16 @@ var WTF = (function() {
                 '<dd>' + idea + '</dd>' +
             '</dl>'
         );
+            
+        $("#share-twitter").html(
+            '<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text='+ 
+            encodeURIComponent(idea.substring(0,115)+'..')+ 
+            "&url=" + encodeURIComponent("http://bearbob.github.io/WTFDSA/?id=" + ref)
+            +'">Tweet it</a>' +
+            ' <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>'
+        );
+        
+        console.log("ref: "+ ref);
 
         // Toggle animation
 
@@ -195,10 +244,18 @@ var WTF = (function() {
 
         var index = ~~( Math.random() * list.length );
         var item = list[ index ];
+        
+        //add index to the ref
+        var hex = index.toString(16);
+        while(hex.length < 2){
+            hex = '0'+hex;
+        }
+        ref += hex;
 
-        if ( remove )
-
+        if ( remove ){
+            //at position index 1 item will be removed
             list.splice( index, 1 );
+        }
 
         return item;
     }
