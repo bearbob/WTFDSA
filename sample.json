@@ -10,7 +10,9 @@
     "response": [
         "Already fucking seen one",
         "Give me a-fucking-nother one",
-        "Don't really give a fuck"
+        "Don't really give a fuck",
+        "Das klingt schrecklich",
+        "Langweilig!"
     ],
 
     "template": [
@@ -48,6 +50,7 @@
         "Ochsen",
         "Kerker",
         "Drachen",
+        "sich selbst",
         "Dunkelheit",
         "Licht",
         "Bergarbeit",
@@ -57,6 +60,10 @@
         "Hunde",
         "Pferde",
         "Kämpfe",
+        "Fröche",
+        "Insekten",
+        "Katzen",
+        "Würmer",
         "blaue Augen",
         "rotes Haar",
         "Sommersprossen",
@@ -70,6 +77,7 @@
         "Törtchen",
         "Vögel",
         "Steine",
+        "Pilze",
         "Tannenzapfen",
         "spitze Nadeln",
         "Messer",
@@ -86,6 +94,12 @@
         "Mäuse",
         "Ratten",
         "Salzwasser",
+        "Wasser",
+        "Wein",
+        "Bäume",
+        "Metall",
+        "Haken",
+        "Hüte",
         "Moos",
         "Kaninchen",
         "Stühle",
@@ -121,9 +135,11 @@
         "zickige",
         "selbstbewusste",
         "arrogante",
+        "sexsüchtige",
         "scharfsinnige",
         "friedfertige",
         "eifersüchtige",
+        "erfolgreiche",
         "faule",
         "verfressene",
         "neidische",
@@ -368,7 +384,7 @@
     ],
     
     "backstory": [
-        "als Kind @babyevent und nun nach Heilung sucht",
+        "als Kind @babyevent",
         "als Kind schreckliches erlebte und nun auf Rache sinnt",
         "lange Sklavenarbeit leisten musste, bis eine spektakuläre Flucht durch @place gelang",
         "bei dem Gedanken an @place Gänsehaut bekommt",
@@ -380,12 +396,21 @@
         "nicht an Magie glaubt",
         "schon immer eine eigene Taverne eröffnen wollte",
         "eine große Schuld begleichen muss",
-        "viel Angst (VIEL ANGST) vor der Dunkelheit hat",
-        "ständig schmutzige Witze reißt",
+        "viel Angst (SEHR VIEL ANGST) vor der Dunkelheit hat",
+        "ständig @joketype Witze reißt",
         "ein Spielproblem hat",
         "nach Anerkennung strebt",
         "eine Autobiographie schreibt",
         "komplett Farbenblind ist"
+    ],
+    
+    "joketype": [
+       "schmutzige",
+        "grandiose",
+        "schlechte",
+        "unterirdische",
+        "anzügliche",
+        "beleidigende"
     ],
     
     "actor": [
@@ -401,7 +426,8 @@
         "einen Geist",
         "einen Nekromanten",
         "eine Hexe",
-        "einen Prinzen"
+        "einen Prinzen",
+        "eine Prinzessin"
     ],
     
     "action": [
@@ -414,11 +440,13 @@
     ],
     
     "babyevent": [
-        "verflucht wurde",
-        "sehr krank wurde",
+        "verflucht wurde und nun nach Heilung sucht",
+        "sehr krank wurde und nun nach Heilung sucht",
         "von schrecklichen Visionen geplagt wurde",
-        "verhext wurde",
-        "verzaubert wurde"
+        "verhext wurde und nun nach Heilung sucht",
+        "verzaubert wurde und nun nach Heilung sucht",
+        "allein am Fuße eines Vulkans gefunden wurde",
+        "der Liebe abschwor"
     ],
     
     "place": [
@@ -443,7 +471,9 @@
         "eine Ruine",
         "eine heilige Stätte",
         "eine Kapelle",
+        "eine Waffenkammer",
         "einen Marktplatz",
+        "ein Waisenhaus",
         "einen Garten",
         "eine Kaserne"
     ],
@@ -470,19 +500,41 @@
         "des Hochverrats beschuldigt wurde",
         "@accidentornot Hochverrat beging",
         "@accidentornot @place @demolitionaction",
-        "@accidentornot einen Nekromanten befreite"
+        "@accidentornot @freedomfor befreite"
     ],
     
     "accidentornot": [
         "versehentlich",
         "unabsichtlich",
-        "durch einen Unfall"
+        "durch einen Unfall",
+        "absichtlich",
+        "unüberlegt"
+    ],
+    
+    "freedomfor": [
+        "einen Nekromanten",
+        "einen Drachen",
+        "einen verwunschenen König",
+        "einen Geist",
+        "einen Straftäter",
+        "einen Mörder",
+        "einen Dieb",
+        "einen Verräter"
     ],
     
     "raisedby": [
         "Wölfen",
         "Piraten",
+        "Sklaven",
+        "Schafen",
         "Bauern",
+        "Schlangen",
+        "Amazonen",
+        "Mönchen",
+        "Dirnen",
+        "Drachen",
+        "Magiern",
+        "Hexen",
         "Landstreichern",
         "Bären",
         "Zombies",

@@ -101,7 +101,7 @@ aside {
 
 footer {
 	text-transform: none;
-	position: absolute;
+	position: fixed;
 	text-align: right;
 	line-height: 16px;
 	font-size: 12px;
