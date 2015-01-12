@@ -215,10 +215,10 @@ var WTF = (function() {
         );
             
         $("#share-twitter").html(
-            '<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text='+ 
-            encodeURIComponent(idea.substring(0,115)+'..')+ 
-            "&url=" + encodeURIComponent("http://bearbob.github.io/WTFDSA/?id=" + ref)
-            +'">Tweet it</a>' +
+            '<a href="https://twitter.com/intent/tweet?button_hashtag=wtfdsa&text='+
+            encodeURIComponent(idea.substring(0,115)+'..') +
+            '" class="twitter-hashtag-button" data-related="tripletwenty_" data-url="http://bearbob.github.io/WTFDSA/?id=' +    
+            ref + '">Tweet #wtfdsa</a>'+
             ' <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>'
         );
         
