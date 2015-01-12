@@ -1,7 +1,10 @@
 {
     "heading": [
         "Du denkst dein Charakter wäre cool? Mein Charakter ist",
-        "Mein nächster Charakter wird"
+        "Mein nächster Charakter wird",
+        "Falls ihr es nicht wusstet, mein Charakter ist",
+        "Dein neuer Lieblingscharakter ist",
+        "Darf ich vorstellen: der geilste Charakter der Welt,"
     ],
 
     "response": [
@@ -32,6 +35,38 @@
         "Elfen",
         "Menschen",
         "Spinnen", 
+        "Eier",
+        "Brüste",
+        "Hosen",
+        "Haare",
+        "Bärte",
+        "Gold",
+        "Eidechsen",
+        "Hühner",
+        "scharfe Kanten",
+        "Mathematik",
+        "Ochsen",
+        "Kerker",
+        "Drachen",
+        "Dunkelheit",
+        "Licht",
+        "Bergarbeit",
+        "Juwelen",
+        "Brot",
+        "Fleisch",
+        "Hunde",
+        "Pferde",
+        "Kämpfe",
+        "blaue Augen",
+        "rotes Haar",
+        "Sommersprossen",
+        "körperliche Arbeit",
+        "geistige Arbeit",
+        "Musik",
+        "Kunst",
+        "helle Farben",
+        "dunkle Farben",
+        "Muskeln",
         "Törtchen",
         "Vögel",
         "Steine",
@@ -49,8 +84,16 @@
         "Alkohol",
         "Tabak",
         "Mäuse",
+        "Ratten",
+        "Salzwasser",
+        "Moos",
+        "Kaninchen",
+        "Stühle",
+        "Tische",
+        "Holztüren",
         "Elefanten",
         "Fische",
+        "Tote",
         "alte Menschen",
         "alte Elfen",
         "alte Zwerge",
@@ -67,8 +110,18 @@
         "attraktive",
         "vernarbte",
         "humorlose",
+        "einzelgängerische",
+        "teamfähige",
+        "umweltbewusste",
         "unattraktive",
         "kräftige",
+        "alkoholabhängige",
+        "mysteriöse",
+        "schäbige",
+        "zickige",
+        "selbstbewusste",
+        "arrogante",
+        "scharfsinnige",
         "friedfertige",
         "eifersüchtige",
         "faule",
@@ -84,6 +137,8 @@
         "höfliche",
         "unhöfliche",
         "grausame",
+        "stolze",
+        "zurückhaltende",
         "leidenschaftliche",
         "rechthaberische",
         "hässliche",
@@ -320,7 +375,17 @@
         "@exilereason und @exileway",
         "sich weigert zu baden",
         "die große Liebe sucht",
-        "davon träumt, @actor zu @action"
+        "davon träumt, @actor zu @action",
+        "von @raisedby großgezogen wurde",
+        "nicht an Magie glaubt",
+        "schon immer eine eigene Taverne eröffnen wollte",
+        "eine große Schuld begleichen muss",
+        "viel Angst (VIEL ANGST) vor der Dunkelheit hat",
+        "ständig schmutzige Witze reißt",
+        "ein Spielproblem hat",
+        "nach Anerkennung strebt",
+        "eine Autobiographie schreibt",
+        "komplett Farbenblind ist"
     ],
     
     "actor": [
@@ -333,7 +398,10 @@
         "einen Elf",
         "eine Elfin",
         "einen Piraten",
-        "einen Geist"
+        "einen Geist",
+        "einen Nekromanten",
+        "eine Hexe",
+        "einen Prinzen"
     ],
     
     "action": [
@@ -356,6 +424,7 @@
     "place": [
         "eine Bäckerei",
         "ein Lager",
+        "eine Taverne",
         "eine Kirche",
         "einen Handelsposten",
         "ein Rathaus",
@@ -369,6 +438,12 @@
         "ein befestigtes Fort",
         "eine Stadt",
         "ein Haus",
+        "einen Kerner",
+        "ein Dorf",
+        "eine Ruine",
+        "eine heilige Stätte",
+        "eine Kapelle",
+        "einen Marktplatz",
         "einen Garten",
         "eine Kaserne"
     ],
@@ -400,6 +475,18 @@
     
     "accidentornot": [
         "versehentlich",
-        "unabsichtlich"
+        "unabsichtlich",
+        "durch einen Unfall"
+    ],
+    
+    "raisedby": [
+        "Wölfen",
+        "Piraten",
+        "Bauern",
+        "Landstreichern",
+        "Bären",
+        "Zombies",
+        "Geistern",
+        "Schaustellern"
     ]
 }
