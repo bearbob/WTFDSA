@@ -5,7 +5,10 @@
         "Falls ihr es nicht wusstet, mein Charakter ist",
         "Dein neuer Lieblingscharakter ist",
         "Darf ich vorstellen: der geilste Charakter der Welt,",
-        "Weißt du, was ein heftiger Charakter wäre?"
+        "Weißt du, was ein heftiger Charakter wäre?",
+        "Bestimmt kennst du noch nicht,",
+        "Aber am besten ist immer noch",
+        "Lass mich raten... Dein Charakter ist"
     ],
 
     "response": [
@@ -13,7 +16,9 @@
         "Give me a-fucking-nother one",
         "Don't really give a fuck",
         "Das klingt schrecklich",
-        "Langweilig!"
+        "Langweilig!",
+        "Oh mein Gott! Weg damit!",
+        "Wem ist denn der Scheiß eingefallen?"
     ],
 
     "template": [
@@ -287,7 +292,19 @@
         "Priester",
         "Schamane",
         "Fischer",
-        "Fährmann"
+        "Fährmann",
+        "Perainegeweihter",
+        "Rondrageweihter",
+        "Angroschgeweihter", 
+        "Hesindegeweihter",
+        "Ingerimmgeweihter",
+        "Korgeweihter",
+        "Phexgeweihter",
+        "Rahjageweihter",
+        "Traviageweihter",
+        "Praiosgeweihter",
+        "Tsageweihter",
+        "Efferdgeweihter" 
     ],
     
     "wclass": [
@@ -338,7 +355,19 @@
         "Zahnärztin",
         "Dirne",
         "Totengräberin",
-        "Köchin"
+        "Köchin",
+         "Perainegeweihter",
+        "Rondrageweihter",
+        "Angroschgeweihter", 
+        "Hesindegeweihter",
+        "Ingerimmgeweihter",
+        "Korgeweihte",
+        "Phexgeweihte",
+        "Rahjageweihte",
+        "Traviageweihte",
+        "Praiosgeweihte",
+        "Tsageweihte",
+        "Efferdgeweihte"
     ],
     
     "location": [
@@ -434,7 +463,14 @@
         "schlechte",
         "unterirdische",
         "anzügliche",
-        "beleidigende"
+        "beleidigende",
+        "die besten",
+        "Großmütter verachtende",
+        "dämliche",
+        "mittelmäßige",
+        "bescheuerte",
+        "intelligente",
+        "charmante"
     ],
     
     "unbelieveable": [
@@ -463,18 +499,30 @@
         "einen Nekromanten",
         "eine Hexe",
         "einen Prinzen",
-        "eine Prinzessin"
+        "eine Prinzessin",
+        "eine Kartoffel",
+        "einen Adligen",
+        "eine Adlige",
+        "einen Soldaten"   
     ],
     
     "action": [
-       "töten",
+        "töten",
         "heiraten",
         "treffen",
         "ermorden",
         "versklaven",
+<<<<<<< HEAD
         "einer Tasse Tee einzuladen",
         "verführen",
         "entführen"
+=======
+        "entführen",
+        "verführen",
+        "ersuchen",
+        "etwas persönliches fragen",
+        "bestehlen"
+>>>>>>> f759f371ea0cba6fa98042cf00f6749507d970f5
     ],
     
     "babyevent": [
@@ -484,10 +532,13 @@
         "verhext wurde und nun nach Heilung sucht",
         "verzaubert wurde und nun nach Heilung sucht",
         "allein am Fuße eines Vulkans gefunden wurde",
-        "der Liebe abschwor"
+        "der Liebe abschwor",
+        "alleine im Wald gefunden wurde",
+        "alleine auf dem Fluß treibend gefunden wurde"
     ],
     
     "place": [
+<<<<<<< HEAD
         "eine @femaleplace",
         "ein @neutralplace",
         "einen @maleplace"
@@ -526,6 +577,9 @@
         "Haus",
         "Dorf",
         "Waisenhaus"
+        "Freudenhaus",
+        "altes Bootshaus",
+        "Zelt"
     ],
     
     "demolitionaction": [
@@ -534,7 +588,9 @@
         "verfluchte",
         "zerstörte",
         "ruinierte",
-        "unter Wasser setzte"
+        "unter Wasser setzte",
+        "kaputt machte",
+        "sprengte"
     ],
     
     "exileway": [
@@ -543,7 +599,9 @@
         "ins Exil getrieben wurde",
         "dafür gehängt werden sollte",
         "dafür eingekerkert werden sollte",
-        "deswegen fliehen musste"
+        "deswegen fliehen musste",
+        "auf ewig vertrieben wurde",
+        "die Flucht antreten musste"
     ],
     
     "exilereason": [
@@ -558,7 +616,9 @@
         "unabsichtlich",
         "durch einen Unfall",
         "absichtlich",
-        "unüberlegt"
+        "unüberlegt",
+        "mit voller Absicht",
+        "durch einen merkwürdigen Zufall"
     ],
     
     "freedomfor": [
@@ -570,6 +630,9 @@
         "einen Mörder",
         "einen Dieb",
         "einen Verräter"
+        "einen uralten Dämon",
+        "eine Hexe",
+        "einen Schwarzmagier"
     ],
     
     "raisedby": [
@@ -589,6 +652,9 @@
         "Bären",
         "Zombies",
         "Geistern",
-        "Schaustellern"
+        "Schaustellern",
+        "Gauklern",
+        "Wildschweinen",
+        "Einsiedlern"
     ]
 }
