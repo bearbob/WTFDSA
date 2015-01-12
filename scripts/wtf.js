@@ -48,6 +48,13 @@ var WTF = (function() {
         initUI();
         buildRexExp();
         generate();
+        
+        // A rough calculation of the number of possible results
+        var sum = 0;
+        $.each(corpus, function (index, value) {
+            sum += value.length;
+        }); 
+        $("#count").text(sum);
     }
 
     /*

@@ -4,7 +4,8 @@
         "Mein nächster Charakter wird",
         "Falls ihr es nicht wusstet, mein Charakter ist",
         "Dein neuer Lieblingscharakter ist",
-        "Darf ich vorstellen: der geilste Charakter der Welt,"
+        "Darf ich vorstellen: der geilste Charakter der Welt,",
+        "Weißt du, was ein heftiger Charakter wäre?"
     ],
 
     "response": [
@@ -43,6 +44,9 @@
         "Haare",
         "Bärte",
         "Gold",
+        "Brusthaare",
+        "Achselhaare",
+        "Nasenhaare",
         "Eidechsen",
         "Hühner",
         "scharfe Kanten",
@@ -413,8 +417,8 @@
         "die große Liebe sucht",
         "davon träumt, @actor zu @action",
         "von @raisedby großgezogen wurde",
-        "nicht an Magie glaubt",
-        "schon immer eine eigene Taverne eröffnen wollte",
+        "nicht an @unbelieveable glaubt",
+        "schon immer eine eigene @femaleplace errichten wollte",
         "eine große Schuld begleichen muss",
         "viel Angst (SEHR VIEL ANGST) vor der Dunkelheit hat",
         "ständig @joketype Witze reißt",
@@ -433,6 +437,15 @@
         "beleidigende"
     ],
     
+    "unbelieveable": [
+        "Magie",
+        "Geister",
+        "Frauenrechte",
+        "Untote",
+        "Rosinen im Brot",
+        "Totenbeschwörung"
+    ],
+    
     "actor": [
         "einen König",
         "eine Königin",
@@ -442,6 +455,9 @@
         "eine Zwergin",
         "einen Elf",
         "eine Elfin",
+        "einen Landstreicher",
+        "eine Dirne",
+        "eine Piratin",
         "einen Piraten",
         "einen Geist",
         "einen Nekromanten",
@@ -456,6 +472,8 @@
         "treffen",
         "ermorden",
         "versklaven",
+        "einer Tasse Tee einzuladen",
+        "verführen",
         "entführen"
     ],
     
@@ -470,32 +488,44 @@
     ],
     
     "place": [
-        "eine Bäckerei",
-        "ein Lager",
-        "eine Taverne",
-        "eine Kirche",
-        "einen Handelsposten",
-        "ein Rathaus",
-        "eine Schmiede",
-        "ein Gasthaus",
-        "eine Akademie",
-        "eine Apotheke",
-        "ein Frachtschiff",
-        "eine Burg",
-        "ein Schloss",
-        "ein befestigtes Fort",
-        "eine Stadt",
-        "ein Haus",
-        "einen Kerner",
-        "ein Dorf",
-        "eine Ruine",
-        "eine heilige Stätte",
-        "eine Kapelle",
-        "eine Waffenkammer",
-        "einen Marktplatz",
-        "ein Waisenhaus",
-        "einen Garten",
-        "eine Kaserne"
+        "eine @femaleplace",
+        "ein @neutralplace",
+        "einen @maleplace"
+    ],
+    
+    "maleplace": [
+        "Handelsposten",
+        "Kerker",
+        "Marktplatz",
+        "Garten"
+    ],
+    
+    "femaleplace": [
+        "Bäckerei",
+        "Taverne",
+        "Kirche",
+        "Schmiede",
+        "Akademie",
+        "Apotheke",
+        "Burg",
+        "Stadt",
+        "Ruine",
+        "heilige Stätte",
+        "Kapelle",
+        "Waffenkammer",
+        "Kaserne"
+    ],
+    
+    "neutralplace": [
+        "Lager",
+        "Rathaus",
+        "Gasthaus",
+        "Frachtschiff",
+        "Schloss",
+        "befestigtes Fort",
+        "Haus",
+        "Dorf",
+        "Waisenhaus"
     ],
     
     "demolitionaction": [
