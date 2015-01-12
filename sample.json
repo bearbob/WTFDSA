@@ -512,17 +512,12 @@
         "treffen",
         "ermorden",
         "versklaven",
-<<<<<<< HEAD
         "einer Tasse Tee einzuladen",
         "verführen",
-        "entführen"
-=======
         "entführen",
-        "verführen",
         "ersuchen",
         "etwas persönliches fragen",
         "bestehlen"
->>>>>>> f759f371ea0cba6fa98042cf00f6749507d970f5
     ],
     
     "babyevent": [
@@ -538,7 +533,6 @@
     ],
     
     "place": [
-<<<<<<< HEAD
         "eine @femaleplace",
         "ein @neutralplace",
         "einen @maleplace"
@@ -576,7 +570,7 @@
         "befestigtes Fort",
         "Haus",
         "Dorf",
-        "Waisenhaus"
+        "Waisenhaus",
         "Freudenhaus",
         "altes Bootshaus",
         "Zelt"
@@ -629,7 +623,7 @@
         "einen Straftäter",
         "einen Mörder",
         "einen Dieb",
-        "einen Verräter"
+        "einen Verräter",
         "einen uralten Dämon",
         "eine Hexe",
         "einen Schwarzmagier"
