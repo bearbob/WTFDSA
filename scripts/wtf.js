@@ -173,6 +173,9 @@ var WTF = (function() {
         ref = "";
         
         var param = getUrlParameter('id');
+        if(param == "none"){
+            param = undefined;
+        }
         var temp;
         
         var type, text, part, iter = 0, // Safety mechanism
