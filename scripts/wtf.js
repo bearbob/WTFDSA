@@ -56,7 +56,6 @@ var WTF = (function() {
             sum += value.length;
         }); 
         $("#count").text(sum);
-        console.log(ref);
     }
 
     /*
@@ -174,14 +173,17 @@ var WTF = (function() {
         var temp;
         
         var type, text, part, iter = 0, // Safety mechanism
-            idea = randomItem( templates ),
+            idea = randomItem( templates, false, true ),
             item = regex.exec( idea ),
             copy = cloneCorpus();
         
         //if parameter was used, parse the idea template
         if(param.length > 0){
-            temp = parseInt(param.substring(0,3), 16);
-            param = param.substring(3);
+            //before parsing, set ref to param
+            ref = param;
+            //parse
+            temp = parseInt(param.substring(0,2), 16);
+            param = param.substring(2);
             idea = templates[temp];
         }
         
@@ -192,11 +194,11 @@ var WTF = (function() {
 
             //console.log( text, copy, copy[ text ] );
             if(param.length > 0){
-                temp = parseInt(param.substring(0,3), 16);
-                param = param.substring(3);
+                temp = parseInt(param.substring(0,2), 16);
+                param = param.substring(2);
                 part = copy[ text ][temp];
             }else{
-                part = randomItem( copy[ text ], true );
+                part = randomItem( copy[ text ], true, true );
             }
             idea = idea.replace( type, part );
 
@@ -218,7 +220,7 @@ var WTF = (function() {
             '<a href="https://twitter.com/intent/tweet?button_hashtag=wtfdsa&text='+
             encodeURIComponent(idea.substring(0,115)+'..') +
             '" class="twitter-hashtag-button" data-related="tripletwenty_" data-url="http://bearbob.github.io/WTFDSA/' +
-            //'?id=' + ref + 
+            '?id=' + ref + 
             '">Tweet #wtfdsa</a>'+
             ' <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>'
         );
@@ -241,17 +243,20 @@ var WTF = (function() {
         dom.output.addClass( 'animate' ).css( 'opacity', 1 );
     }
 
-    function randomItem( list, remove ) {
+    function randomItem( list, remove, useRef ) {
 
         var index = ~~( Math.random() * list.length );
         var item = list[ index ];
         
-        //add index to the ref
-        var hex = index.toString(16);
-        while(hex.length < 2){
-            hex = '0'+hex;
+        if( useRef ) {
+            //add index to the ref
+            var hex = index.toString(16);
+            while(hex.length < 2){
+                hex = '0'+hex;
+            }
+            //console.log("hex: "+ hex + "//" +item);
+            ref += hex;
         }
-        ref += hex;
 
         if ( remove ){
             //at position index 1 item will be removed
