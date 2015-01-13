@@ -23,6 +23,7 @@ var WTF = (function() {
     var regex;
     var dom;
     var ref = ""; //the reference parameter for the character
+    var param = getUrlParameter('id');
 
     /*
       ------------------------------------------------------------
@@ -133,6 +134,7 @@ var WTF = (function() {
         };
 
         dom.generate.click( function() {
+            param = "";
             generate();
             return false;
         });
@@ -172,10 +174,6 @@ var WTF = (function() {
         //reset reference
         ref = "";
         
-        var param = getUrlParameter('id');
-        if(param == "none"){
-            param = undefined;
-        }
         var temp;
         
         var type, text, part, iter = 0, // Safety mechanism
