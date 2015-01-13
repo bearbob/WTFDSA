@@ -1,4 +1,4 @@
-
+//http://urls.api.twitter.com/1/urls/count.json?url=http://bearbob.github.io/WTFDSA/
 var WTF = (function() {
 
     'use strict';

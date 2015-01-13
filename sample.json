@@ -582,17 +582,23 @@
         "eine verfluchten Stadt",
         "einem schwimmenden Königreich",
         "einem tiefen Wald",
-        "dem Tal der Riesen"
+        "dem Tal der Riesen",
+        "einem höchst religiösen Umfeld",
+        "einer großen Familie",
+        "dem versteinerten Wald",
+        "einer unreinen Blutlinie",
+        "einer reinen Blutlinie",
+        "einer Untergrundstadt"
     ],
     
     "backstory": [
         "als Kind @babyevent",
-        "als Kind schreckliches erlebte und nun auf Rache sinnt",
+        "als Kind etwas Schreckliches erlebte und nun auf Rache sinnt",
         "lange Sklavenarbeit leisten musste, bis eine spektakuläre Flucht durch @place gelang",
         "bei dem Gedanken an @place Gänsehaut bekommt",
         "@exilereason und @exileway",
         "sich weigert zu baden",
-        "die große Liebe sucht",
+        "@searchingfor sucht",
         "davon träumt, @actor zu @action",
         "von @raisedby großgezogen wurde",
         "nicht an @unbelieveable glaubt",
@@ -620,6 +626,17 @@
         "bescheuerte",
         "intelligente",
         "charmante"
+    ],
+    
+    "searchingfor": [
+        "die große Liebe",
+        "einer Kugel mit Ecken",
+        "dem Tod",
+        "einem alten Mann",
+        "ein riesiges Ei",
+        "einen verborgenen Schatz",
+        "nach neuen Freunden",
+        "dem Sinn des Lebens"
     ],
     
     "unbelieveable": [
@@ -679,8 +696,8 @@
         "verzaubert wurde und nun nach Heilung sucht",
         "allein am Fuße eines Vulkans gefunden wurde",
         "der Liebe abschwor",
-        "alleine im Wald gefunden wurde",
-        "alleine auf dem Fluß treibend gefunden wurde"
+        "allein im Wald gefunden wurde",
+        "allein auf dem Fluß treibend gefunden wurde"
     ],
     
     "place": [
@@ -746,14 +763,18 @@
         "dafür eingekerkert werden sollte",
         "deswegen fliehen musste",
         "auf ewig vertrieben wurde",
-        "die Flucht antreten musste"
+        "die Flucht antreten musste",
+        "darum ermordet werden sollte",
+        "dafür verbrannt werden sollte"
     ],
     
     "exilereason": [
         "des Hochverrats beschuldigt wurde",
         "@accidentornot Hochverrat beging",
         "@accidentornot @place @demolitionaction",
-        "@accidentornot @freedomfor befreite"
+        "@accidentornot @freedomfor befreite",
+        "angeblich in einem @neutralplace Diebesgut versteckte",
+        "@accidentornot einer feindlichen Armee die Tore öffnete"
     ],
     
     "accidentornot": [
