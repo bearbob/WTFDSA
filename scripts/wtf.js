@@ -169,6 +169,9 @@ var WTF = (function() {
 
     function generate() {
         
+        //reset reference
+        ref = "";
+        
         var param = getUrlParameter('id');
         var temp;
         
