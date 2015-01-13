@@ -158,7 +158,7 @@ var WTF = (function() {
 
         regex = new RegExp( content, 'gi' );
     }
-
+    
     /*
       ------------------------------------------------------------
 
@@ -185,10 +185,14 @@ var WTF = (function() {
             //before parsing, set ref to param
             ref = param;
             //parse
-            temp = parseInt(param.substring(0,2), 16);
-            param = param.substring(2);
+            temp = decodeNum(param.substring(0,2));
             idea = templates[temp];
+            //console.log("index: "+temp+"(hex: "+ param.substring(0,2) + ")//" +idea);
+            param = param.substring(2);
         }
+        
+        //console.log("Encode 1337: "+ encodeNum("1337"));
+        //console.log("Decode 1337: "+ decodeNum(encodeNum("1337")));
         
         while ( item && ++iter < 1000 ) {
 
@@ -197,9 +201,10 @@ var WTF = (function() {
 
             //console.log( text, copy, copy[ text ] );
             if(param.length > 0){
-                temp = parseInt(param.substring(0,2), 16);
-                param = param.substring(2);
+                temp = decodeNum(param.substring(0,2));
                 part = copy[ text ][temp];
+                //console.log("index: "+temp+"(hex: "+ param.substring(0,2) + ")//" +part);
+                param = param.substring(2);
             }else{
                 part = randomItem( copy[ text ], true, true );
             }
@@ -253,11 +258,11 @@ var WTF = (function() {
         
         if( useRef ) {
             //add index to the ref
-            var hex = index.toString(16);
+            var hex = encodeNum(index);
             while(hex.length < 2){
                 hex = '0'+hex;
             }
-            //console.log("hex: "+ hex + "//" +item);
+            //console.log("index: "+index+"(hex: "+ hex + ")//" +item);
             ref += hex;
         }
 
